@@ -25,14 +25,19 @@
 </script>
 <body>
 <div class="wrapper">
-    <div class="language"><a id="RU" href="#RU">RU</a> <a id="EN" href="#EN">EN</a></div>
+    <div class="language">
+        <a id="RU" href="#RU"><img src="images/ru.png" alt="RU" title="Russian" class="photo-container-imgage"></a>
+        <a id="EN" href="#EN"><img src="images/en.png" alt="EN" title="English" class="photo-container-imgage"></a>
+    </div>
     <div class="ENG">
         <div class="sidebar-wrapper">
             <div class="photo-container">
-                <img src="images/photo.jpg" alt="">
+                <img src="images/photo.jpg" alt="photo" class="photo-container-imgage" style="width: 100%;">
                 <h1 class="name">Pavel Nikitsenka</h1>
                 <h4>Junior Python Developer</h4>
             </div>
+
+            <a href="#" class="buttonDownload">Download</a>
 
             <div class="container-block">
                 <h2>languages</h2>
@@ -44,11 +49,7 @@
                     </tr>
                     <tr>
                         <td>Engilsh</td>
-                        <td class="table-second-col cursive">so so it is so hard language so... I fuck it</td>
-                    </tr>
-                    <tr>
-                        <td>Deutch</td>
-                        <td class="table-second-col cursive">Das ist fantastisch</td>
+                        <td class="table-second-col cursive">Intermediate (B1)</td>
                     </tr>
                     </tbody>
                 </table>
@@ -56,6 +57,34 @@
 
             <div class="container-block">
                 <h2>awards</h2>
+                <table border="0">
+                    <tbody>
+                    <tr>
+                        <td><img src="images/star.png" alt="star"></td>
+                        <td class="table-second-col">
+                            <div class="award-data">
+                                <p>Python for Informatics</p>
+                                <p class="cursive"><a href="https://www.intuit.ru/verifydiplomas/101258943"
+                                                      target="_blank">Intuit</a></p>
+                                <p class="cursive">06.27.2019</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/star.png" alt="star"></td>
+                        <td class="table-second-col">
+                            <div class="award-data">
+                                <p>Introduction in Django</p>
+                                <p class="cursive"><a href="https://www.intuit.ru/verifydiplomas/101310890"
+                                                      target="_blank">Intuit</a></p>
+                                <p class="cursive">02.17.2020</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="container-block">
@@ -95,41 +124,79 @@
         <div class="main-wrapper">
             <section class="container-block-main">
                 <h2>profile</h2>
-                <blockquote>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                    Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                    Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                    Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                    Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                    Текст Текст Текст Текст Текст Текст Текст Текст
+                <blockquote>
+                    I'm beginner in Python. Study Django on my own.<br>
+                    Since 2010 I have been developing apps in Delphi. Create programs, support and develop new functionality for existing applications.<br>
+                    I'm evolving my skills always. Responsible and punctual. Have critical thinking skills.
                 </blockquote>
-            </section>
-
-            <section class="container-block-main">
-                <h2>education</h2>
-                <div class="timeline">
-                    <ul>
-                        <li>
-                            <span></span>
-                            <div class="timeline-name-content">
-                                <h3>name of content</h3>
-                                <h4>test message</h4>
-                            </div>
-                            <div class="timeline-content">content</div>
-                            <h3 class="timeline-date">2020 - Present</h3>
-                        </li>
-                        <li>
-                            <span></span>
-                            <div class="timeline-name-content">
-                                <h3>name of content</h3>
-                                <h4>test message</h4>
-                            </div>
-                            <div class="timeline-content">content 2</div>
-                            <h3 class="timeline-date">2020 - 2022</h3>
-                        </li>
-                    </ul>
+                <div class="container-address">
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/home.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Address</h3>
+                                        <p class="cursive">210016 Vitebsk, Belarus</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/site.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Website</h3>
+                                        <p class="cursive"><a href="#">sitename.io</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+                <div class="container-address">
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/phone.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Phone</h3>
+                                        <p class="cursive">+ 375 (33) 358-13-16</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/email.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Email</h3>
+                                        <p class="cursive"><a
+                                                href="mailto:freedomdsk@gmail.com">freedomdsk@gmail.com</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
             </section>
-
+            <!--EXPERIENCE-->
             <section class="container-block-main">
                 <h2>work experience</h2>
                 <div class="timeline">
@@ -137,38 +204,399 @@
                         <li>
                             <span></span>
                             <div class="timeline-name-content">
-                                <h3>name of content</h3>
-                                <h4>test message</h4>
+                                <h3>VITEBSK REGIONAL SETTLEMENT AND REFERENCE CENTER</h3>
+                                <h4>Programming Engineer</h4>
                             </div>
-                            <div class="timeline-content">content</div>
-                            <h3 class="timeline-date">2020 - Present</h3>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Develop and support programs (Borland Delphi 7, Embarcadero Delphi, SQL
+                                        Firebird)
+                                    </li>
+                                    <li>
+                                        Developing scripts for automation work in Python
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="timeline-date">2017 - Present</h3>
                         </li>
                         <li>
                             <span></span>
                             <div class="timeline-name-content">
-                                <h3>name of content</h3>
-                                <h4>test message</h4>
+                                <h3>VITEBSK STATE TECHNOLOGICAL COLLEGE</h3>
+                                <h4>Programming Engineer</h4>
                             </div>
-                            <div class="timeline-content">content 2</div>
-                            <h3 class="timeline-date">2020 - 2022</h3>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Managed servers, workstations, routers, switches and existing network
+                                        applications
+                                    </li>
+                                    <li>Supported all LAN, WAN and other networking systems</li>
+                                    <li>Created applications (Embarcadero Delphi, Borland C++ Builder)</li>
+                                </ul>
+                            </div>
+                            <h3 class="timeline-date">2010 - 2017</h3>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="container-block-main">
-                <h2>skills & expertize</h2>
-                <p>skill 1</p>
-                <p>skill 2</p>
-                <p>skill 3</p>
-                <p>skill 4</p>
+                <h2>skills & expertise</h2>
+                <div class="skills-section">
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            Python
+                        </div>
+                        <div class="skill-item">
+                            Django
+                        </div>
+                        <div class="skill-item">
+                            PostgreSQL
+                        </div>
+                        <div class="skill-item">
+                            MySQL
+                        </div>
+                    </div>
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            Delphi
+                        </div>
+                        <div class="skill-item">
+                            Firebird
+                        </div>
+                        <div class="skill-item">
+                            SQLite
+                        </div>
+                        <div class="skill-item">
+                            Git
+                        </div>
+                    </div>
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            HTML
+                        </div>
+                        <div class="skill-item">
+                            CSS
+                        </div>
+                        <div class="skill-item">
+                            JSON
+                        </div>
+                        <div class="skill-item">
+                            XML
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--EDUCATION-->
+            <section class="container-block-main">
+                <h2>education</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>VITEBSK STATE TECHNOLOGICAL UNIVERSITY</h3>
+                                <h4>Computer Software Engineering</h4>
+                            </div>
+                            <h3 class="timeline-date">2015 - 2019</h3>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>VITEBSK STATE TECHNOLOGICAL COLLEGE</h3>
+                                <h4>Computer Software Engineering</h4>
+                            </div>
+                            <h3 class="timeline-date">2007 - 2010</h3>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     </div>
 
 
     <div class="RUS">
-        test
+        <div class="sidebar-wrapper">
+            <div class="photo-container">
+                <img src="images/photo.jpg" alt="photo" class="photo-container-imgage" style="width: 100%;">
+                <h1 class="name">Павел Никитенко</h1>
+                <h4>Junior Python Developer</h4>
+            </div>
+
+            <a href="#" class="buttonDownload">Скачать</a>
+
+            <div class="container-block">
+                <h2>языки</h2>
+                <table border="0">
+                    <tbody>
+                    <tr>
+                        <td>Русский</td>
+                        <td class="table-second-col cursive">Родной</td>
+                    </tr>
+                    <tr>
+                        <td>Английский</td>
+                        <td class="table-second-col cursive">Средний (B1)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container-block">
+                <h2>Курсы</h2>
+                <table border="0">
+                    <tbody>
+                    <tr>
+                        <td><img src="images/star.png" alt="star"></td>
+                        <td class="table-second-col">
+                            <div class="award-data">
+                                <p>Введение в Python</p>
+                                <p class="cursive"><a href="https://www.intuit.ru/verifydiplomas/101258943"
+                                                      target="_blank">Intuit</a></p>
+                                <p class="cursive">27.06.2019</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/star.png" alt="star"></td>
+                        <td class="table-second-col">
+                            <div class="award-data">
+                                <p>Введение в Django</p>
+                                <p class="cursive"><a href="https://www.intuit.ru/verifydiplomas/101310890"
+                                                      target="_blank">Intuit</a></p>
+                                <p class="cursive">17.02.2020</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container-block">
+                <h2>соцсети</h2>
+                <table border="0">
+                    <tbody>
+                    <tr>
+                        <td><img src="images/social/skype.png" alt="skype"></td>
+                        <td class="table-second-col">Skype<br><a href="skype:freedomdsk" class="cursive">freedomdsk</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/social/telegram.png" alt="telegram"></td>
+                        <td class="table-second-col">Telegram<br><a href="https://t.me/JitteryMan" class="cursive">@JitteryMan</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/social/linkedin.png" alt="linkedin"></td>
+                        <td class="table-second-col">LinkedIn<br><a href="https://www.linkedin.com/in/nikitsenko/"
+                                                                    class="cursive">linkedin.com/in/nikitsenko</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/social/github.png" alt="github"></td>
+                        <td class="table-second-col">Github<br><a href="https://github.com/JitteryMan" class="cursive">github.com/JitteryMan</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/social/bitbucket.png" alt="bitbucket"></td>
+                        <td class="table-second-col">Bitbucket<br><a href="https://bitbucket.org/jittery/"
+                                                                     class="cursive">bitbucket.org/jittery</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--MAIN-->
+        <div class="main-wrapper">
+            <section class="container-block-main">
+                <h2>профиль</h2>
+                <blockquote>
+                    Я начинающий Python разработчик. Самостоятельно изучаю Django<br>
+                    С 2010 года пишу на Delphi. Занимаюсь созданием ПО, поддержкой, разработкой нового функционала для действующих приложений.<br>
+                    Постоянно развиваю имеющиеся навыки. Являюсь ответственным и пунктуальным. Обладаю критическим мышлением.
+                </blockquote>
+                <div class="container-address">
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/home.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Адрес</h3>
+                                        <p class="cursive">210016 Витебск, Беларусь</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/site.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Сайт</h3>
+                                        <p class="cursive"><a href="#">sitename.io</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-address">
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/phone.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Телефон</h3>
+                                        <p class="cursive">+ 375 (33) 358-13-16</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-block">
+                        <table border="0">
+                            <tbody>
+                            <tr>
+                                <td><img src="images/email.png" alt="home"></td>
+                                <td class="table-second-col">
+                                    <div class="award-data">
+                                        <h3>Email</h3>
+                                        <p class="cursive"><a
+                                                href="mailto:freedomdsk@gmail.com">freedomdsk@gmail.com</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </section>
+            <!--EXPERIENCE-->
+            <section class="container-block-main">
+                <h2>Опыт работы</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>Витебский областной расчетно-справочный центр</h3>
+                                <h4>Инженер-программист</h4>
+                            </div>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Разработка и сопровождение программ (Borland Delphi 7, Embarcadero Delphi, SQL
+                                        Firebird)
+                                    </li>
+                                    <li>
+                                        Написание скриптов для автоматизации работы на Python
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="timeline-date">2017 - Present</h3>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>Витебский государственный технологический колледж</h3>
+                                <h4>Инженер-программист</h4>
+                            </div>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Управление серверами, ПК, маршрутизаторами, коммутаторами и существующими сетевыми приложеними
+                                    </li>
+                                    <li>Поддержка всех LAN, WAN и других сетевых систем</li>
+                                    <li>Разработка приложений (Embarcadero Delphi, Borland C++ Builder)</li>
+                                </ul>
+                            </div>
+                            <h3 class="timeline-date">2010 - 2017</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container-block-main">
+                <h2>Навыки и опыт</h2>
+                <div class="skills-section">
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            Python
+                        </div>
+                        <div class="skill-item">
+                            Django
+                        </div>
+                        <div class="skill-item">
+                            PostgreSQL
+                        </div>
+                        <div class="skill-item">
+                            MySQL
+                        </div>
+                    </div>
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            Delphi
+                        </div>
+                        <div class="skill-item">
+                            Firebird
+                        </div>
+                        <div class="skill-item">
+                            SQLite
+                        </div>
+                        <div class="skill-item">
+                            Git
+                        </div>
+                    </div>
+                    <div class="container-skills">
+                        <div class="skill-item">
+                            HTML
+                        </div>
+                        <div class="skill-item">
+                            CSS
+                        </div>
+                        <div class="skill-item">
+                            JSON
+                        </div>
+                        <div class="skill-item">
+                            XML
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--EDUCATION-->
+            <section class="container-block-main">
+                <h2>образование</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>ВИТЕБСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНОЛОГИЧЕСКИЙ УНИВЕРСИТЕТ</h3>
+                                <h4>Информационные системы и технологии</h4>
+                            </div>
+                            <h3 class="timeline-date">2015 - 2019</h3>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="timeline-name-content">
+                                <h3>ВИТЕБСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНОЛОГИЧЕСКИЙ КОЛЛЕДЖ</h3>
+                                <h4>Информационные системы и технологии</h4>
+                            </div>
+                            <h3 class="timeline-date">2007 - 2010</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
 
 </div>

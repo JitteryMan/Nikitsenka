@@ -40,25 +40,106 @@ a:hover {
     max-width: 960px;
     margin: 0 auto;
     position: relative;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fafafa;
 }
 
-.photo-container img {
+.photo-container-imgage {
     position: relative;
     filter: grayscale(1);
-    width: 100%;
     transition: filter 0.4s ease;
 }
 
-.photo-container img:hover {
+.photo-container-imgage:hover {
     filter: grayscale(0);
     transition: filter 0.4s ease;
 }
 
 .main-wrapper {
-    padding: 30px 60px 30px 300px;
+    padding: 30px 60px 30px 330px;
+}
+
+/*===================================== BUTTON ===============================*/
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
+    background-color: #F9D84B;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-indent: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.buttonDownload:hover {
+    background-color: #333;
+    color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+    border-color: #F9D84B;
+}
+
+.buttonDownload:hover:after {
+    border-top-color: #F9D84B;
+    animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+
+    0.001% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 0;
+    }
 }
 
 
@@ -74,7 +155,7 @@ a:hover {
     background-color: #414143;
     position: absolute;
     left: 0;
-    width: 240px;
+    width: 270px;
     height: 100%;
     min-height: 800px;
 }
@@ -155,6 +236,10 @@ a:hover {
     font-size: 1.2em;
 }
 
+.award-data {
+    line-height: 0;
+    margin-top: 15px;
+}
 
 /*=====================================MAIN BLOCK===============================*/
 .container-block-main {
@@ -181,20 +266,48 @@ a:hover {
 }
 
 blockquote {
-    margin: 0;
+    margin: 1em 0;
     position: relative;
     padding: 10px 0 0 80px;
     font-family: 'Caveat', cursive;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 blockquote:before {
     content: '❝';
-    font-size: 7em;
+    font-size: 5em;
     color: #F9D84B;
     position: absolute;
-    left: 0;
+    left: 10px;
     top: -30px;
+}
+
+/*DIV BLOCK*/
+.table-block {
+    display: block;
+    margin: 0 10px;
+}
+
+.container-address {
+    float: right;
+}
+
+/*SKILLS*/
+.skills-section {
+    margin: 20px 0 40px;
+}
+
+.container-skills {
+    position: relative;
+    clear: both;
+}
+
+.skill-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 700;
 }
 
 /*===============================TIMELINE*/
@@ -205,7 +318,7 @@ blockquote:before {
 
 .timeline ul {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: -40px;
     padding: 0;
     position: relative;
     transition: all 0.5s linear;
@@ -220,18 +333,24 @@ blockquote:before {
 
 .timeline-name-content {
     margin-top: -30px;
+    margin-bottom: 15px;
 }
 
-.timeline-name-content h3{
+.timeline-name-content h3 {
     text-transform: uppercase;
 }
 
-.timeline-name-content h4{
+.timeline-name-content h4 {
     margin: -15px 0 0;
 }
 
 .timeline-content {
-    padding: 10px;
+    padding: 10px 0 35px 10px;
+}
+
+.timeline-content li {
+    margin: -15px -35px 10px 0;
+    padding: 5px;
 }
 
 .timeline-date {
@@ -263,12 +382,13 @@ blockquote:before {
     background-color: #F9D84B;
     border: 2px solid black;
     position: absolute;
-    left: -7.2px;
+    left: -7px;
 }
 
 .timeline ul li > span:before {
     top: 0;
 }
+
 
 /*===============================MEDIA*/
 @media (max-width: 1160px) {
@@ -278,8 +398,13 @@ blockquote:before {
         position: relative;
     }
 
+    .language {
+        right: 1em;
+    }
+
     .wrapper img {
         position: relative;
+        width: 100%;
     }
 
     .sidebar-wrapper {
@@ -291,12 +416,13 @@ blockquote:before {
     .sidebar-wrapper h4 {
         margin-top: 115px;
         font-size: 5em;
+        margin-bottom: 40px;
     }
 
     .name {
         text-align: center;
         font-size: 8em;
-        margin: -180px 15px;
+        margin: -170px 15px;
         border: 15px solid #f9d84b;
         border-bottom: 0;
     }
@@ -318,6 +444,99 @@ blockquote:before {
 
     .name:after {
         right: -15px;
+    }
+
+    .buttonDownload {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    .container-block h2 {
+        font-size: 4em;
+        border-bottom: 3px solid #757577;
+    }
+
+    .container-block h2:before {
+        height: 5px;
+        bottom: -4px;
+        width: 2em;
+    }
+
+    .container-block table {
+        font-size: 2.5em;
+        padding: 15px;
+    }
+
+    .container-block table img {
+        width: 300%;
+    }
+
+    .table-second-col {
+        padding-left: 2em;
+    }
+
+    .main-wrapper {
+        padding: 30px;
+    }
+
+    .container-block-main h2 {
+        border-bottom: 3px solid #d2d2d2;
+        font-size: 3em;
+    }
+
+    .container-block-main h2:before {
+        width: 2em;
+        height: 5px;
+        bottom: -4px;
+    }
+
+    blockquote {
+        font-size: 2.5em;
+    }
+
+    blockquote:before {
+        font-size: 3em;
+    }
+
+    .table-block {
+        font-size: 1.9em;
+    }
+
+    .table-block img {
+        width: 200%;
+    }
+
+    .timeline {
+        font-size: 2em;
+        margin-top: 0.7em;
+    }
+
+    .timeline li {
+        padding: 0 20px 20px;
+        line-height: 1em;
+    }
+
+    .timeline ul li > span:before {
+        width: 20px;
+        height: 20px;
+        left: -13px;
+    }
+
+    .timeline-content li {
+        margin: 0 -35px 10px 0;
+    }
+
+    .skills-section {
+        margin: 2em 0 4em;
+    }
+
+    .skill-item {
+        font-size: 2.3em;
+    }
+
+    .timeline-date {
+        left: -140px;
+        top: -30px;
     }
 
 
